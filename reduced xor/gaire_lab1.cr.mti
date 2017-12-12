@@ -1,0 +1,201 @@
+C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/tb_gaire_reduced_xor_vector_direct_tree_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_lab1\tb_gaire_reduced_xor_vector_direct_tree_arch.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_reduced_xor_vector
+-- Compiling architecture TESTBENCH of tb_gaire_reduced_xor_vector
+-- Compiling configuration cfg_tb_gaire_reduced_xor_vector_direct_tree_arch
+-- Loading entity tb_gaire_reduced_xor_vector
+-- Loading architecture TESTBENCH of tb_gaire_reduced_xor_vector
+-- Loading entity CLOCK
+-- Loading entity gaire_reduced_xor_vector
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/tb_gaire_reduced_xor_cascade1_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_lab1\tb_gaire_reduced_xor_cascade1_arch.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_reduced_xor
+-- Compiling architecture TESTBENCH of tb_gaire_reduced_xor
+-- Compiling configuration cfg_tb_gaire_reduced_xor_cascade1_arch
+-- Loading entity tb_gaire_reduced_xor
+-- Loading architecture TESTBENCH of tb_gaire_reduced_xor
+-- Loading entity CLOCK
+-- Loading entity gaire_reduced_xor
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/tb_gaire_reduced_xor_vector_direct_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_lab1\tb_gaire_reduced_xor_vector_direct_arch.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_reduced_xor_vector
+-- Compiling architecture TESTBENCH of tb_gaire_reduced_xor_vector
+-- Compiling configuration cfg_tb_gaire_reduced_xor_vector_direct_arch
+-- Loading entity tb_gaire_reduced_xor_vector
+-- Loading architecture TESTBENCH of tb_gaire_reduced_xor_vector
+-- Loading entity CLOCK
+-- Loading entity gaire_reduced_xor_vector
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/clock.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/clock.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Compiling package CLOCKS
+-- Compiling package body CLOCKS
+-- Loading package CLOCKS
+-- Compiling entity CLOCK
+-- Compiling architecture BEHAVIOR of CLOCK
+-- Loading package CLOCKS
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity LC3_MEMORY
+-- Compiling architecture behavioral of LC3_MEMORY
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/gaire_lab1_part1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/gaire_lab1_part1.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity gaire_reduced_xor
+-- Compiling architecture cascade1_arch of gaire_reduced_xor
+-- Compiling architecture cascade2_arch of gaire_reduced_xor
+-- Loading entity gaire_reduced_xor
+-- Compiling architecture cascade_compact_arch of gaire_reduced_xor
+-- Loading entity gaire_reduced_xor
+-- Compiling architecture tree_arch of gaire_reduced_xor
+-- Loading entity gaire_reduced_xor
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/tb_gaire_reduced_xor_vector_shared1_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_lab1\tb_gaire_reduced_xor_vector_shared1_arch.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_reduced_xor_vector
+-- Compiling architecture TESTBENCH of tb_gaire_reduced_xor_vector
+-- Compiling configuration cfg_tb_gaire_reduced_xor_vector_shared1_arch
+-- Loading entity tb_gaire_reduced_xor_vector
+-- Loading architecture TESTBENCH of tb_gaire_reduced_xor_vector
+-- Loading entity CLOCK
+-- Loading entity gaire_reduced_xor_vector
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/gaire_lab1_part2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/gaire_lab1_part2.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity gaire_reduced_xor_vector
+-- Compiling architecture direct_arch of gaire_reduced_xor_vector
+-- Compiling architecture shared1_arch of gaire_reduced_xor_vector
+-- Loading entity gaire_reduced_xor_vector
+-- Compiling architecture shared_compact_arch of gaire_reduced_xor_vector
+-- Loading entity gaire_reduced_xor_vector
+-- Compiling architecture direct_tree_arch of gaire_reduced_xor_vector
+-- Loading entity gaire_reduced_xor_vector
+-- Compiling architecture optimal_tree_arch of gaire_reduced_xor_vector
+-- Loading entity gaire_reduced_xor_vector
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/tb_gaire_reduced_xor_cascade2_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_lab1\tb_gaire_reduced_xor_cascade2_arch.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_reduced_xor
+-- Compiling architecture TESTBENCH of tb_gaire_reduced_xor
+-- Compiling configuration cfg_tb_gaire_reduced_xor_cascade2_arch
+-- Loading entity tb_gaire_reduced_xor
+-- Loading architecture TESTBENCH of tb_gaire_reduced_xor
+-- Loading entity CLOCK
+-- Loading entity gaire_reduced_xor
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/tb_gaire_reduced_xor_vector_shared_compact_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_lab1\tb_gaire_reduced_xor_vector_shared_compact_arch.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_reduced_xor_vector
+-- Compiling architecture TESTBENCH of tb_gaire_reduced_xor_vector
+-- Compiling configuration cfg_tb_gaire_reduced_xor_vector_shared_compact_arch
+-- Loading entity tb_gaire_reduced_xor_vector
+-- Loading architecture TESTBENCH of tb_gaire_reduced_xor_vector
+-- Loading entity CLOCK
+-- Loading entity gaire_reduced_xor_vector
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/tb_gaire_reduced_xor_vector_optimal_tree_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_lab1\tb_gaire_reduced_xor_vector_optimal_tree_arch.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_reduced_xor_vector
+-- Compiling architecture TESTBENCH of tb_gaire_reduced_xor_vector
+-- Compiling configuration cfg_tb_gaire_reduced_xor_vector_optimal_tree_arch
+-- Loading entity tb_gaire_reduced_xor_vector
+-- Loading architecture TESTBENCH of tb_gaire_reduced_xor_vector
+-- Loading entity CLOCK
+-- Loading entity gaire_reduced_xor_vector
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/tb_gaire_reduced_xor_tree_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_lab1\tb_gaire_reduced_xor_tree_arch.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_reduced_xor
+-- Compiling architecture TESTBENCH of tb_gaire_reduced_xor
+-- Compiling configuration cfg_tb_gaire_reduced_xor_tree_arch
+-- Loading entity tb_gaire_reduced_xor
+-- Loading architecture TESTBENCH of tb_gaire_reduced_xor
+-- Loading entity CLOCK
+-- Loading entity gaire_reduced_xor
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/txt_util.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/txt_util.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package txt_util
+-- Compiling package body txt_util
+-- Loading package txt_util
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lab1/tb_gaire_reduced_xor_cascade_compact_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_lab1\tb_gaire_reduced_xor_cascade_compact_arch.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_reduced_xor
+-- Compiling architecture TESTBENCH of tb_gaire_reduced_xor
+-- Compiling configuration cfg_tb_gaire_reduced_xor_cascade_compact_arch
+-- Loading entity tb_gaire_reduced_xor
+-- Loading architecture TESTBENCH of tb_gaire_reduced_xor
+-- Loading entity CLOCK
+-- Loading entity gaire_reduced_xor
+
+} {} {}}
