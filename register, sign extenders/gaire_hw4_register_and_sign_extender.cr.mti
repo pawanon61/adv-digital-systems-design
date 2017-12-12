@@ -1,0 +1,205 @@
+C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/gaire_6_to_16_bit_sign_extender.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\gaire_6_to_16_bit_sign_extender.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Compiling entity gaire_6_to_16_bit_sign_extender
+-- Compiling architecture bhv of gaire_6_to_16_bit_sign_extender
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/tb_gaire_11_to_16_bit_sign_extender.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\tb_gaire_11_to_16_bit_sign_extender.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_11_to_16_bit_sign_extender
+-- Compiling architecture TESTBENCH of tb_gaire_11_to_16_bit_sign_extender
+-- Compiling configuration cfg_tb_gaire_11_to_16_bit_sign_extender
+-- Loading entity tb_gaire_11_to_16_bit_sign_extender
+-- Loading architecture TESTBENCH of tb_gaire_11_to_16_bit_sign_extender
+-- Loading entity CLOCK
+-- Loading entity gaire_11_to_16_bit_sign_extender
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/gaire_1_bit_register.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\gaire_1_bit_register.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity gaire_1_bit_register
+-- Compiling architecture arch_1_bit_register of gaire_1_bit_register
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/tb_gaire_n_bit_register.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\tb_gaire_n_bit_register.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_n_bit_register
+-- Compiling architecture TESTBENCH of tb_gaire_n_bit_register
+-- Compiling configuration cfg_tb_gaire_n_bit_register
+-- Loading entity tb_gaire_n_bit_register
+-- Loading architecture TESTBENCH of tb_gaire_n_bit_register
+-- Loading entity CLOCK
+-- Loading entity gaire_n_bit_register
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/gaire_9_to_16_bit_sign_extender.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\gaire_9_to_16_bit_sign_extender.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Compiling entity gaire_9_to_16_bit_sign_extender
+-- Compiling architecture bhv of gaire_9_to_16_bit_sign_extender
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/tb_gaire_5_to_16_bit_sign_extender.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\tb_gaire_5_to_16_bit_sign_extender.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_5_to_16_bit_sign_extender
+-- Compiling architecture TESTBENCH of tb_gaire_5_to_16_bit_sign_extender
+-- Compiling configuration cfg_tb_gaire_5_to_16_bit_sign_extender
+-- Loading entity tb_gaire_5_to_16_bit_sign_extender
+-- Loading architecture TESTBENCH of tb_gaire_5_to_16_bit_sign_extender
+-- Loading entity CLOCK
+-- Loading entity gaire_5_to_16_bit_sign_extender
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/gaire_11_to_16_bit_sign_extender.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\gaire_11_to_16_bit_sign_extender.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Compiling entity gaire_11_to_16_bit_sign_extender
+-- Compiling architecture bhv of gaire_11_to_16_bit_sign_extender
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/tb_gaire_6_to_16_bit_sign_extender.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\tb_gaire_6_to_16_bit_sign_extender.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_6_to_16_bit_sign_extender
+-- Compiling architecture TESTBENCH of tb_gaire_6_to_16_bit_sign_extender
+-- Compiling configuration cfg_tb_gaire_6_to_16_bit_sign_extender
+-- Loading entity tb_gaire_6_to_16_bit_sign_extender
+-- Loading architecture TESTBENCH of tb_gaire_6_to_16_bit_sign_extender
+-- Loading entity CLOCK
+-- Loading entity gaire_6_to_16_bit_sign_extender
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/gaire_n_bit_register.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\gaire_n_bit_register.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity gaire_n_bit_register
+-- Compiling architecture arch_n_bit_register of gaire_n_bit_register
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/tb_gaire_9_to_16_bit_sign_extender.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\tb_gaire_9_to_16_bit_sign_extender.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_9_to_16_bit_sign_extender
+-- Compiling architecture TESTBENCH of tb_gaire_9_to_16_bit_sign_extender
+-- Compiling configuration cfg_tb_gaire_9_to_16_bit_sign_extender
+-- Loading entity tb_gaire_9_to_16_bit_sign_extender
+-- Loading architecture TESTBENCH of tb_gaire_9_to_16_bit_sign_extender
+-- Loading entity CLOCK
+-- Loading entity gaire_9_to_16_bit_sign_extender
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/gaire_8_to_16_bit_zero_extender.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\gaire_8_to_16_bit_zero_extender.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Compiling entity gaire_8_to_16_bit_zero_extender
+-- Compiling architecture bhv of gaire_8_to_16_bit_zero_extender
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/clock.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/clock.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Compiling package CLOCKS
+-- Compiling package body CLOCKS
+-- Loading package CLOCKS
+-- Compiling entity CLOCK
+-- Compiling architecture BEHAVIOR of CLOCK
+-- Loading package CLOCKS
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity LC3_MEMORY
+-- Compiling architecture behavioral of LC3_MEMORY
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/txt_util.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/txt_util.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package txt_util
+-- Compiling package body txt_util
+-- Loading package txt_util
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/tb_gaire_1_bit_register.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\tb_gaire_1_bit_register.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_1_bit_register
+-- Compiling architecture TESTBENCH of tb_gaire_1_bit_register
+-- Compiling configuration cfg_tb_gaire_1_bit_register
+-- Loading entity tb_gaire_1_bit_register
+-- Loading architecture TESTBENCH of tb_gaire_1_bit_register
+-- Loading entity CLOCK
+-- Loading entity gaire_1_bit_register
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/tb_gaire_8_to_16_bit_zero_extender.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\tb_gaire_8_to_16_bit_zero_extender.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_8_to_16_bit_zero_extender
+-- Compiling architecture TESTBENCH of tb_gaire_8_to_16_bit_zero_extender
+-- Compiling configuration cfg_tb_gaire_8_to_16_bit_zero_extender
+-- Loading entity tb_gaire_8_to_16_bit_zero_extender
+-- Loading architecture TESTBENCH of tb_gaire_8_to_16_bit_zero_extender
+-- Loading entity CLOCK
+-- Loading entity gaire_8_to_16_bit_zero_extender
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw4_register_and_sign_extender/gaire_5_to_16_bit_sign_extender.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw4_register_and_sign_extender\gaire_5_to_16_bit_sign_extender.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Compiling entity gaire_5_to_16_bit_sign_extender
+-- Compiling architecture bhv of gaire_5_to_16_bit_sign_extender
+
+} {} {}}
