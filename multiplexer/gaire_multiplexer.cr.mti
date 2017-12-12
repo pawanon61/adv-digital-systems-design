@@ -1,0 +1,99 @@
+C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/txt_util.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/txt_util.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package txt_util
+-- Compiling package body txt_util
+-- Loading package txt_util
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/gaire_3_to_1_mux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/gaire_3_to_1_mux.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity gaire_3_to_1_multiplexer
+-- Compiling architecture arch_3_to_1_multiplexer of gaire_3_to_1_multiplexer
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/tb_2_to_1_mux.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_multiplexer\tb_2_to_1_mux.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_2_to_1_multiplexer
+-- Compiling architecture TESTBENCH of tb_gaire_2_to_1_multiplexer
+-- Compiling configuration cfg_tb_gaire_2_to_1_multiplexer
+-- Loading entity tb_gaire_2_to_1_multiplexer
+-- Loading architecture TESTBENCH of tb_gaire_2_to_1_multiplexer
+-- Loading entity CLOCK
+-- Loading entity gaire_2_to_1_multiplexer
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/gaire_4_to_1_mux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/gaire_4_to_1_mux.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity gaire_4_to_1_multiplexer
+-- Compiling architecture arch_4_to_1_multiplexer of gaire_4_to_1_multiplexer
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/tb_3_to_1_mux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/tb_3_to_1_mux.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_3_to_1_multiplexer
+-- Compiling architecture TESTBENCH of tb_gaire_3_to_1_multiplexer
+-- Compiling configuration cfg_tb_gaire_3_to_1_multiplexer
+-- Loading entity tb_gaire_3_to_1_multiplexer
+-- Loading architecture TESTBENCH of tb_gaire_3_to_1_multiplexer
+-- Loading entity CLOCK
+-- Loading entity gaire_3_to_1_multiplexer
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/tb_gaire_4_to_1_mux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/tb_gaire_4_to_1_mux.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_4_to_1_multiplexer
+-- Compiling architecture TESTBENCH of tb_gaire_4_to_1_multiplexer
+-- Compiling configuration cfg_tb_gaire_4_to_1_multiplexer
+-- Loading entity tb_gaire_4_to_1_multiplexer
+-- Loading architecture TESTBENCH of tb_gaire_4_to_1_multiplexer
+-- Loading entity CLOCK
+-- Loading entity gaire_4_to_1_multiplexer
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/gaire_2_to_1_mux.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_multiplexer\gaire_2_to_1_mux.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity gaire_2_to_1_multiplexer
+-- Compiling architecture arch_2_to_1_multiplexer of gaire_2_to_1_multiplexer
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/clock.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_multiplexer/clock.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Compiling package CLOCKS
+-- Compiling package body CLOCKS
+-- Loading package CLOCKS
+-- Compiling entity CLOCK
+-- Compiling architecture BEHAVIOR of CLOCK
+-- Loading package CLOCKS
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity LC3_MEMORY
+-- Compiling architecture behavioral of LC3_MEMORY
+
+} {} {}}
