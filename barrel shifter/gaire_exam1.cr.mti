@@ -1,0 +1,292 @@
+C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/clock.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/clock.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Compiling package CLOCKS
+-- Compiling package body CLOCKS
+-- Loading package CLOCKS
+-- Compiling entity CLOCK
+-- Compiling architecture BEHAVIOR of CLOCK
+-- Loading package CLOCKS
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity LC3_MEMORY
+-- Compiling architecture behavioral of LC3_MEMORY
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_shift3mode_for_multi_level_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_shift3mode_for_multi_level_arch.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_shift3mode
+-- Compiling architecture TESTBENCH of tb_gaire_shift3mode
+-- Compiling configuration cfg_tb_gaire_shift3mode_multi_level_arch
+-- Loading entity tb_gaire_shift3mode
+-- Loading architecture TESTBENCH of tb_gaire_shift3mode
+-- Loading entity CLOCK
+-- Loading entity gaire_shift3mode
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_shift3mode_for_direct_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_shift3mode_for_direct_arch.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_shift3mode
+-- Compiling architecture TESTBENCH of tb_gaire_shift3mode
+-- Compiling configuration cfg_tb_gaire_shift3mode_direct_arch
+-- Loading entity tb_gaire_shift3mode
+-- Loading architecture TESTBENCH of tb_gaire_shift3mode
+-- Loading entity CLOCK
+-- Loading entity gaire_shift3mode
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/util_package.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/util_package.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package util_package
+-- Compiling package body util_package
+-- Loading package util_package
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_barrel_shifter_logic_right.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_exam1\tb_gaire_barrel_shifter_logic_right.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Loading package util_package
+-- Compiling entity tb_gaire_barrel_shifter
+-- Compiling architecture TESTBENCH of tb_gaire_barrel_shifter
+-- Compiling configuration cfg_tb_gaire_barrel_shifter_logic_right
+-- Loading entity tb_gaire_barrel_shifter
+-- Loading architecture TESTBENCH of tb_gaire_barrel_shifter
+-- Loading entity CLOCK
+-- Loading entity gaire_barrel_shifter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_fixed_shifter_logic_right.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_fixed_shifter_logic_right.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_fixed_shifter
+-- Compiling architecture TESTBENCH of tb_gaire_fixed_shifter
+-- Compiling configuration cfg_tb_gaire_fixed_shifter_logic_right
+-- Loading entity tb_gaire_fixed_shifter
+-- Loading architecture TESTBENCH of tb_gaire_fixed_shifter
+-- Loading entity CLOCK
+-- Loading package util
+-- Loading entity gaire_fixed_shifter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/gaire_rotate_right.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/gaire_rotate_right.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity gaire_rotate_right
+-- Compiling architecture direct_arch of gaire_rotate_right
+-- Compiling architecture multi_level_arch of gaire_rotate_right
+-- Loading entity gaire_rotate_right
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/gaire_fixed_shifter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/gaire_fixed_shifter.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package util
+-- Compiling entity gaire_fixed_shifter
+-- Compiling architecture para_arch of gaire_fixed_shifter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/gaire_shift3mode.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/gaire_shift3mode.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity gaire_shift3mode
+-- Compiling architecture direct_arch of gaire_shift3mode
+-- Compiling architecture shared_arch of gaire_shift3mode
+-- Loading entity gaire_shift3mode
+-- Compiling architecture multi_level_arch of gaire_shift3mode
+-- Loading entity gaire_shift3mode
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/txt_util.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/txt_util.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package txt_util
+-- Compiling package body txt_util
+-- Loading package txt_util
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_rotate_right_multi_level_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_rotate_right_multi_level_arch.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_rotate_right
+-- Compiling architecture TESTBENCH of tb_gaire_rotate_right
+-- Compiling configuration cfg_tb_gaire_rotate_right_multi_level_arch
+-- Loading entity tb_gaire_rotate_right
+-- Loading architecture TESTBENCH of tb_gaire_rotate_right
+-- Loading entity CLOCK
+-- Loading entity gaire_rotate_right
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_fixed_shifter_logic_left.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_fixed_shifter_logic_left.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_fixed_shifter
+-- Compiling architecture TESTBENCH of tb_gaire_fixed_shifter
+-- Compiling configuration cfg_tb_gaire_fixed_shifter_logic_left
+-- Loading entity tb_gaire_fixed_shifter
+-- Loading architecture TESTBENCH of tb_gaire_fixed_shifter
+-- Loading entity CLOCK
+-- Loading package util
+-- Loading entity gaire_fixed_shifter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_rotate_right_direct_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_rotate_right_direct_arch.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_rotate_right
+-- Compiling architecture TESTBENCH of tb_gaire_rotate_right
+-- Compiling configuration cfg_tb_gaire_rotate_right_direct_arch
+-- Loading entity tb_gaire_rotate_right
+-- Loading architecture TESTBENCH of tb_gaire_rotate_right
+-- Loading entity CLOCK
+-- Loading entity gaire_rotate_right
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_barrel_shifter_logic_left.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_exam1\tb_gaire_barrel_shifter_logic_left.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Loading package util_package
+-- Compiling entity tb_gaire_barrel_shifter
+-- Compiling architecture TESTBENCH of tb_gaire_barrel_shifter
+-- Compiling configuration cfg_tb_gaire_barrel_shifter_logic_left
+-- Loading entity tb_gaire_barrel_shifter
+-- Loading architecture TESTBENCH of tb_gaire_barrel_shifter
+-- Loading entity CLOCK
+-- Loading entity gaire_barrel_shifter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_barrel_shifter_rotate_left.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_exam1\tb_gaire_barrel_shifter_rotate_left.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Loading package util_package
+-- Compiling entity tb_gaire_barrel_shifter
+-- Compiling architecture TESTBENCH of tb_gaire_barrel_shifter
+-- Compiling configuration cfg_tb_gaire_barrel_shifter_rotate_left
+-- Loading entity tb_gaire_barrel_shifter
+-- Loading architecture TESTBENCH of tb_gaire_barrel_shifter
+-- Loading entity CLOCK
+-- Loading entity gaire_barrel_shifter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_fixed_shifter_rotate_left.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_fixed_shifter_rotate_left.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_fixed_shifter
+-- Compiling architecture TESTBENCH of tb_gaire_fixed_shifter
+-- Compiling configuration cfg_tb_gaire_fixed_shifter_rotate_left
+-- Loading entity tb_gaire_fixed_shifter
+-- Loading architecture TESTBENCH of tb_gaire_fixed_shifter
+-- Loading entity CLOCK
+-- Loading package util
+-- Loading entity gaire_fixed_shifter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_barrel_shifter_rotate_right.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_exam1\tb_gaire_barrel_shifter_rotate_right.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Loading package util_package
+-- Compiling entity tb_gaire_barrel_shifter
+-- Compiling architecture TESTBENCH of tb_gaire_barrel_shifter
+-- Compiling configuration cfg_tb_gaire_barrel_shifter_rotate_right
+-- Loading entity tb_gaire_barrel_shifter
+-- Loading architecture TESTBENCH of tb_gaire_barrel_shifter
+-- Loading entity CLOCK
+-- Loading entity gaire_barrel_shifter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/gaire_barrel_shifter.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_exam1\gaire_barrel_shifter.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package util_package
+-- Compiling entity gaire_barrel_shifter
+-- Compiling architecture para_arch of gaire_barrel_shifter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_fixed_shifter_rotate_right.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_fixed_shifter_rotate_right.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_fixed_shifter
+-- Compiling architecture TESTBENCH of tb_gaire_fixed_shifter
+-- Compiling configuration cfg_tb_gaire_fixed_shifter_rotate_right
+-- Loading entity tb_gaire_fixed_shifter
+-- Loading architecture TESTBENCH of tb_gaire_fixed_shifter
+-- Loading entity CLOCK
+-- Loading package util
+-- Loading entity gaire_fixed_shifter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_shift3mode_for_shared_arch.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_exam1/tb_gaire_shift3mode_for_shared_arch.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_shift3mode
+-- Compiling architecture TESTBENCH of tb_gaire_shift3mode
+-- Compiling configuration cfg_tb_gaire_shift3mode_shared_arch
+-- Loading entity tb_gaire_shift3mode
+-- Loading architecture TESTBENCH of tb_gaire_shift3mode
+-- Loading entity CLOCK
+-- Loading entity gaire_shift3mode
+
+} {} {}}
