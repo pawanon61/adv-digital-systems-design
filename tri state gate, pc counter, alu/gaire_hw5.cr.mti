@@ -1,0 +1,107 @@
+C:/Modeltech_pe_edu_10.4a/examples/gaire_hw5_tristate_pccounter_alu/tb_gaire_pc_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw5_tristate_pccounter_alu\tb_gaire_pc_counter.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_program_counter
+-- Compiling architecture TESTBENCH of tb_gaire_program_counter
+-- Compiling configuration cfg_tb_gaire_program_counter
+-- Loading entity tb_gaire_program_counter
+-- Loading architecture TESTBENCH of tb_gaire_program_counter
+-- Loading entity CLOCK
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Loading entity gaire_program_counter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw5_tristate_pccounter_alu/gaire_tri_state_gate.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw5_tristate_pccounter_alu\gaire_tri_state_gate.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity gaire_tri_state_gate
+-- Compiling architecture arch_tri_state_gate of gaire_tri_state_gate
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw5_tristate_pccounter_alu/tb_gaire_alu.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw5_tristate_pccounter_alu\tb_gaire_alu.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_ALU
+-- Compiling architecture TESTBENCH of tb_gaire_ALU
+-- Compiling configuration cfg_tb_gaire_ALU
+-- Loading entity tb_gaire_ALU
+-- Loading architecture TESTBENCH of tb_gaire_ALU
+-- Loading entity CLOCK
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Loading entity gaire_alu
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw5_tristate_pccounter_alu/tb_gaire_tri_state_gate.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw5_tristate_pccounter_alu\tb_gaire_tri_state_gate.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Loading package txt_util
+-- Compiling entity tb_gaire_tri_state_gate
+-- Compiling architecture TESTBENCH of tb_gaire_tri_state_gate
+-- Compiling configuration cfg_tb_gaire_tri_state_gate
+-- Loading entity tb_gaire_tri_state_gate
+-- Loading architecture TESTBENCH of tb_gaire_tri_state_gate
+-- Loading entity CLOCK
+-- Loading entity gaire_tri_state_gate
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw5_tristate_pccounter_alu/clock.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_hw5_tristate_pccounter_alu/clock.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Compiling package CLOCKS
+-- Compiling package body CLOCKS
+-- Loading package CLOCKS
+-- Compiling entity CLOCK
+-- Compiling architecture BEHAVIOR of CLOCK
+-- Loading package CLOCKS
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity LC3_MEMORY
+-- Compiling architecture behavioral of LC3_MEMORY
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw5_tristate_pccounter_alu/gaire_pc_counter.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw5_tristate_pccounter_alu\gaire_pc_counter.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity gaire_program_counter
+-- Compiling architecture arch_program_counter of gaire_program_counter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw5_tristate_pccounter_alu/txt_util.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_hw5_tristate_pccounter_alu/txt_util.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package txt_util
+-- Compiling package body txt_util
+-- Loading package txt_util
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_hw5_tristate_pccounter_alu/gaire_alu.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_hw5_tristate_pccounter_alu\gaire_alu.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity gaire_alu
+-- Compiling architecture arch_alu of gaire_alu
+
+} {} {}}
