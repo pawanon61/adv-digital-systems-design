@@ -1,0 +1,108 @@
+C:/Modeltech_pe_edu_10.4a/examples/gaire_lc3/tb_gaire_lc3.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_lc3/tb_gaire_lc3.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity DATAPATH_ALL_TB
+-- Compiling architecture TB1 of DATAPATH_ALL_TB
+-- Compiling configuration CFG_DATAPATH_ALL_TB
+-- Loading entity DATAPATH_ALL_TB
+-- Loading architecture TB1 of DATAPATH_ALL_TB
+-- Loading entity Data_Path_ALL
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lc3/gaire_datapath.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_lc3/gaire_datapath.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity Data_Path_ALL
+-- Compiling architecture structural of Data_Path_ALL
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lc3/clock.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_lc3/clock.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Compiling package CLOCKS
+-- Compiling package body CLOCKS
+-- Loading package CLOCKS
+-- Compiling entity CLOCK
+-- Compiling architecture BEHAVIOR of CLOCK
+-- Loading package CLOCKS
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity LC3_MEMORY
+-- Compiling architecture behavioral of LC3_MEMORY
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lc3/gaire_component_file.vhd {2 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\gaire_lc3\gaire_component_file.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity gaire_1_bit_register
+-- Compiling architecture arch_1_bit_register of gaire_1_bit_register
+-- Compiling entity gaire_n_bit_register
+-- Compiling architecture arch_n_bit_register of gaire_n_bit_register
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity gaire_register_array
+-- Compiling architecture arch_genreg of gaire_register_array
+-- Loading package std_logic_textio
+-- Loading package CLOCKS
+-- Compiling entity gaire_5_to_16_bit_sign_extender
+-- Compiling architecture bhv of gaire_5_to_16_bit_sign_extender
+-- Compiling entity gaire_6_to_16_bit_sign_extender
+-- Compiling architecture bhv of gaire_6_to_16_bit_sign_extender
+-- Compiling entity gaire_8_to_16_bit_zero_extender
+-- Compiling architecture bhv of gaire_8_to_16_bit_zero_extender
+-- Compiling entity gaire_9_to_16_bit_sign_extender
+-- Compiling architecture bhv of gaire_9_to_16_bit_sign_extender
+-- Compiling entity gaire_11_to_16_bit_sign_extender
+-- Compiling architecture bhv of gaire_11_to_16_bit_sign_extender
+-- Compiling entity gaire_2_to_1_multiplexer
+-- Compiling architecture arch_2_to_1_multiplexer of gaire_2_to_1_multiplexer
+-- Compiling entity gaire_3_to_1_multiplexer
+-- Compiling architecture arch_3_to_1_multiplexer of gaire_3_to_1_multiplexer
+-- Compiling entity gaire_4_to_1_multiplexer
+-- Compiling architecture arch_4_to_1_multiplexer of gaire_4_to_1_multiplexer
+-- Compiling entity gaire_adder
+-- Compiling architecture arch_adder of gaire_adder
+-- Compiling entity gaire_tri_state_gate
+-- Compiling architecture arch_tri_state_gate of gaire_tri_state_gate
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity gaire_alu
+-- Compiling architecture arch_alu of gaire_alu
+-- Compiling entity gaire_program_counter
+-- Compiling architecture arch_program_counter of gaire_program_counter
+-- Compiling entity NZP
+-- Compiling architecture behavioral of NZP
+-- Compiling entity gaire_RAM
+-- Compiling architecture RAM_1kb of gaire_RAM
+** Warning: C:\Modeltech_pe_edu_10.4a\examples\gaire_lc3\gaire_component_file.vhd(557): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+
+-- Compiling entity gaire_MAR_REG
+-- Compiling architecture BEH of gaire_MAR_REG
+-- Compiling entity gaire_MDR_REG
+-- Compiling architecture BEH of gaire_MDR_REG
+-- Loading entity CLOCK
+-- Compiling entity LC3_FSM
+-- Compiling architecture BEH of LC3_FSM
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/gaire_lc3/txt_util.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/gaire_lc3/txt_util.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package txt_util
+-- Compiling package body txt_util
+-- Loading package txt_util
+
+} {} {}}

@@ -1,0 +1,855 @@
+--------- Register array -----------
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity gaire_n_bit_register is
+    generic(
+            w: Integer := 16
+    );
+    port (  CLK : in std_logic;
+            reset : IN STD_LOGIC;
+            EN : IN STD_LOGIC;
+            OP_A : IN STD_LOGIC_VECTOR(w-1 DOWNTO 0);
+            OP_Q : OUT STD_LOGIC_vector(w-1 DOWNTO 0)
+        );
+end gaire_n_bit_register;
+
+ARCHITECTURE arch_n_bit_register of gaire_n_bit_register is
+    signal my_sig : STD_LOGIC_vector(w-1 DOWNTO 0);
+
+        begin
+            process(CLK)
+            begin
+            if(CLK'event and CLK = '1') then
+                if(reset='1') then
+                    my_sig <= (others => '0');
+                elsif (EN='1') then
+                    my_sig <= OP_A;
+                else
+                    my_sig <= my_sig;
+                end if; -- reset
+            end if; -- CLK
+        op_q <= my_sig;
+    end process;
+end arch_n_bit_register;
+
+-------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity gaire_register_array is
+generic(w: integer:= 16;
+        p: integer := 3;
+        E: natural := 8
+);
+port(CLK: in std_logic;
+    reset: in std_logic;
+    LD_REG: in std_logic; -- enable to tell us which register in the array is active for input
+    DR: in std_logic_vector(p-1 downto 0);
+    OP_A: in std_logic_vector(w-1 downto 0);
+    SR1: in std_logic_vector(p-1 downto 0);
+    SR2: in std_logic_vector(p-1 downto 0);
+    OP_Q1: out std_logic_vector(w-1 downto 0);
+    OP_Q2: out std_logic_vector(w-1 downto 0)
+);
+end gaire_register_array;
+
+architecture arch_genreg of gaire_register_array is
+type regaray is array(E-1 downto 0) of std_logic_vector(w-1 downto 0);
+signal sEN: std_logic_vector(E-1 downto 0);
+signal sFF: regaray;
+
+component gaire_n_bit_register
+generic(w: integer:= 16);
+port(CLK: in std_logic;
+    reset: in std_logic;
+    EN: in std_logic;
+    OP_A: in std_logic_vector(w-1 downto 0);
+    OP_Q: out std_logic_vector(w-1 downto 0)
+);
+end component;
+
+begin
+    p0: process(DR, LD_REG)
+    begin
+        sEN <= (sEN'range => '0');
+        sEN(to_integer(unsigned(DR))) <= LD_REG;
+    end process;
+    g0: for j in 0 to (E-1) generate
+        regh0: gaire_n_bit_register port map (CLK, Reset, sEN(j), OP_A, sFF(j));
+    end generate;
+OP_Q1 <= sFF(to_integer(unsigned(SR1)));
+OP_Q2 <= sFF(to_integer(unsigned(SR2)));
+
+end arch_genreg;
+
+
+----- 5 to 16 sign extender --------
+
+library ieee;
+use work.CLOCKS.all;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_textio.all;
+
+-- this is for 5 to 16 bit sign extender
+entity gaire_5_to_16_bit_sign_extender is                                           
+generic (p: integer:= 16;   
+         w: integer:= 5);
+port (CLK: in std_logic;   
+      reset: in std_logic;
+      OP_A: in std_logic_vector(w-1 downto 0);
+      OP_Q: out std_logic_vector(p-1 downto 0) 
+      );
+end gaire_5_to_16_bit_sign_extender;                                                  
+
+architecture bhv of gaire_5_to_16_bit_sign_extender is                             
+	
+	signal my_sig: std_logic_vector(p-1 downto 0);
+	begin              
+	process(CLK)
+         begin
+            if(CLK'event and CLK ='1') then
+               if(reset = '1') then
+				my_sig <= (others => '0');
+               elsif(OP_A(w-1) = '0') then
+                     my_sig(p-1 downto w) <= (others => '0');
+				my_sig(w-1 downto 0) <= op_A;
+               else
+                     my_sig(p-1 downto w) <= (others => '1');
+				my_sig(w-1 downto 0) <= OP_A;
+               end if;
+		   end if;
+       end process;
+	OP_Q <= my_sig;
+end bhv;
+
+
+----- 6 to 16 sign extender --------
+library ieee;
+use work.CLOCKS.all;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_textio.all;
+
+-- this is for 6 to 16 bit sign extender
+entity gaire_6_to_16_bit_sign_extender is                                           generic (p: integer:= 16;   
+         w: integer:= 6);
+port (CLK: in std_logic;   
+      reset: in std_logic;
+      OP_A: in std_logic_vector(w-1 downto 0);
+      OP_Q: out std_logic_vector(p-1 downto 0) 
+      );
+end gaire_6_to_16_bit_sign_extender;                                                  
+
+architecture bhv of gaire_6_to_16_bit_sign_extender is                             
+	
+	signal my_sig: std_logic_vector(p-1 downto 0);
+	begin              
+	process(CLK)
+         begin
+            if(CLK'event and CLK ='1') then
+               if(reset = '1') then
+				my_sig <= (others => '0');
+               elsif(OP_A(w-1) = '0') then
+                     my_sig(p-1 downto w) <= (others => '0');
+				my_sig(w-1 downto 0) <= op_A;
+               else
+                     my_sig(p-1 downto w) <= (others => '1');
+				my_sig(w-1 downto 0) <= OP_A;
+               end if;
+		   end if;
+       end process;
+	OP_Q <= my_sig;
+end bhv;
+
+
+----- 8 to 16 zero extender --------
+library ieee;
+use work.CLOCKS.all;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_textio.all;
+
+-- this is for 8 to 16 bit zero extender
+entity gaire_8_to_16_bit_zero_extender is                                           generic (p: integer:= 16;   
+         w: integer:= 8);
+port (CLK: in std_logic;   
+      reset: in std_logic;
+      OP_A: in std_logic_vector(w-1 downto 0);
+      OP_Q: out std_logic_vector(p-1 downto 0) 
+      );
+end gaire_8_to_16_bit_zero_extender;                                                  
+
+architecture bhv of gaire_8_to_16_bit_zero_extender is                             
+	
+	signal my_sig: std_logic_vector(p-1 downto 0);
+	begin              
+	process(CLK)
+         begin
+            if(CLK'event and CLK ='1') then
+               if(reset = '1') then
+				my_sig <= (others => '0');
+               else
+                     my_sig(p-1 downto w) <= (others => '0');
+				my_sig(w-1 downto 0) <= op_A;
+               end if;
+		 end if;
+       end process;
+	OP_Q <= my_sig;
+end bhv;
+
+
+----- 9 to 16 sign extender --------
+library ieee;
+use work.CLOCKS.all;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_textio.all;
+
+-- this is for 9 to 16 bit sign extender
+entity gaire_9_to_16_bit_sign_extender is                                           generic (p: integer:= 16;   
+         w: integer:= 9);
+port (CLK: in std_logic;   
+      reset: in std_logic;
+      OP_A: in std_logic_vector(w-1 downto 0);
+      OP_Q: out std_logic_vector(p-1 downto 0) 
+      );
+end gaire_9_to_16_bit_sign_extender;                                                  
+
+architecture bhv of gaire_9_to_16_bit_sign_extender is                             
+	
+	signal my_sig: std_logic_vector(p-1 downto 0);
+	begin              
+	process(CLK)
+         begin
+            if(CLK'event and CLK ='1') then
+               if(reset = '1') then
+				my_sig <= (others => '0');
+               elsif(OP_A(w-1) = '0') then
+                     my_sig(p-1 downto w) <= (others => '0');
+				my_sig(w-1 downto 0) <= op_A;
+               else
+                     my_sig(p-1 downto w) <= (others => '1');
+				my_sig(w-1 downto 0) <= OP_A;
+               end if;
+		   end if;
+       end process;
+	OP_Q <= my_sig;
+end bhv;
+
+
+----- 11 to 16 sign extender -------
+library ieee;
+use work.CLOCKS.all;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_textio.all;
+
+-- this is for 11 to 16 bit sign extender
+entity gaire_11_to_16_bit_sign_extender is                                           generic (p: integer:= 16;   
+         w: integer:= 11);
+port (CLK: in std_logic;   
+      reset: in std_logic;
+      OP_A: in std_logic_vector(w-1 downto 0);
+      OP_Q: out std_logic_vector(p-1 downto 0) 
+      );
+end gaire_11_to_16_bit_sign_extender;                                                  
+
+architecture bhv of gaire_11_to_16_bit_sign_extender is                             
+	
+	signal my_sig: std_logic_vector(p-1 downto 0);
+	begin              
+	process(CLK)
+         begin
+            if(CLK'event and CLK ='1') then
+               if(reset = '1') then
+				my_sig <= (others => '0');
+               elsif(OP_A(w-1) = '0') then
+                     my_sig(p-1 downto w) <= (others => '0');
+				my_sig(w-1 downto 0) <= op_A;
+               else
+                     my_sig(p-1 downto w) <= (others => '1');
+				my_sig(w-1 downto 0) <= OP_A;
+               end if;
+		   end if;
+       end process;
+	OP_Q <= my_sig;
+end bhv;
+
+
+----------- 2 to 1 MUX -------------
+library ieee;
+use ieee.std_logic_1164.all;
+entity gaire_2_to_1_multiplexer is
+	port(
+		a_0: in std_logic_vector(15 downto 0);
+		a_1: in std_logic_vector(15 downto 0);
+		y: out std_logic_vector(15 downto 0);
+		sel: in std_logic);
+end gaire_2_to_1_multiplexer;
+
+architecture arch_2_to_1_multiplexer of gaire_2_to_1_multiplexer is
+begin
+	with sel select
+		y <= a_0 when '0',
+		     a_1 when others;
+end arch_2_to_1_multiplexer;
+
+
+
+----------- 3 to 1 MUX -------------
+library ieee;
+use ieee.std_logic_1164.all;
+entity gaire_3_to_1_multiplexer is
+	port(
+		a_0: in std_logic_vector(15 downto 0);
+		a_1: in std_logic_vector(15 downto 0);
+		a_2: in std_logic_vector(15 downto 0);
+		y: out std_logic_vector(15 downto 0);
+		sel: in std_logic_vector(1 downto 0));
+end gaire_3_to_1_multiplexer;
+
+architecture arch_3_to_1_multiplexer of gaire_3_to_1_multiplexer is
+begin
+	with sel select
+		y <= a_0 when "00",
+		     a_1 when "01",
+		     a_2 when others;
+end arch_3_to_1_multiplexer;
+
+
+
+----------- 4 to 1 MUX -------------
+library ieee;
+use ieee.std_logic_1164.all;
+entity gaire_4_to_1_multiplexer is
+	port(
+		a_0: in std_logic_vector(15 downto 0);
+		a_1: in std_logic_vector(15 downto 0);
+		a_2: in std_logic_vector(15 downto 0);
+		a_3: in std_logic_vector(15 downto 0);
+		y: out std_logic_vector(15 downto 0);
+		sel: in std_logic_vector(1 downto 0));
+end gaire_4_to_1_multiplexer;
+
+architecture arch_4_to_1_multiplexer of gaire_4_to_1_multiplexer is
+begin
+	with sel select
+		y <= a_0 when "00",
+		     a_1 when "01",
+		     a_2 when "10",
+		     a_3 when others; 
+end arch_4_to_1_multiplexer;
+
+
+--------- TRi-state gate -----------
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity gaire_tri_state_gate is
+generic(w:integer:= 16);
+port( EN: in std_logic;
+	input: in std_logic_vector(w-1 downto 0);
+	output: out std_logic_vector(w-1 downto 0)
+);
+end gaire_tri_state_gate;
+
+architecture arch_tri_state_gate of gaire_tri_state_gate is
+begin
+	process(EN, input)
+	begin
+		if(EN = '1') then
+			output <= input;
+		elsif(EN = '0') then
+			output <= (others => 'Z');
+		end if;
+	end process;
+end arch_tri_state_gate;
+
+
+
+--------- ALU ----------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+
+entity gaire_alu is
+	generic(w: integer:= 16);
+	port(
+	OP_A: in std_logic_vector(w-1 downto 0);
+	OP_B: in std_logic_vector(w-1 downto 0);
+	sel: in std_logic_vector(1 downto 0);
+	OP_Q: out std_logic_vector(w-1 downto 0)
+);
+end gaire_alu;
+
+architecture arch_alu of gaire_alu is
+signal my_sig: std_logic_vector(w-1 downto 0); -- internal signal
+begin
+	with sel select
+		my_sig <= (OP_A + OP_B) when "00",
+				(OP_A - OP_B) when "01",
+				NOT(OP_A) when "10",
+				(OP_A AND OP_B) when others;
+	OP_Q <= my_sig(w-1 downto 0);
+end arch_alu;
+
+
+--------- Program counter ----------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+
+entity gaire_program_counter is
+	generic(w: integer := 16);
+	port(CLK: in std_logic;
+	reset: in std_logic;
+	EN: in std_logic;
+	OP_A: in std_logic_vector(w-1 downto 0);
+	OP_Q: out std_logic_vector(w-1 downto 0);
+	OP_Z: out std_logic_vector(w-1 downto 0)
+);
+end gaire_program_counter;
+
+architecture arch_program_counter of gaire_program_counter is
+signal your_sig: std_logic_vector(w-1 downto 0):=(others => '0');
+signal my_sig: std_logic_vector(w-1 downto 0);
+begin
+	process(CLK)
+	begin
+		if(CLK'event and CLK = '1') then
+			if (reset = '1') then
+				my_sig <= (others => '0');
+				your_sig <= your_sig + 1;
+			elsif(EN = '1') then
+				my_sig <= OP_A;
+				your_sig <= OP_A + 1;
+			else
+				my_sig <= my_sig;
+				your_sig <= your_sig;
+			end if;
+		end if;
+	end process;
+OP_Q <= my_sig;
+OP_Z <= your_sig;
+end arch_program_counter;
+
+
+--------- NZP ----------------------
+library ieee;
+use work.CLOCKS.all;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_textio.all;
+
+entity NZP is 
+port(
+     CLK: in std_logic;
+     reset: in std_logic;
+     EN: in std_logic;
+     OP_A: in std_logic_vector(15 downto 0);
+     OP_Q: out std_logic_vector(2 downto 0)
+     );
+end NZP;
+
+architecture behavioral of NZP is
+signal sOP_Q: std_logic_vector(2 downto 0);
+begin
+process(CLK)
+begin
+   if (CLK'event and CLK ='1') then
+      if (reset = '1') then
+         sOP_Q <= "010";
+      elsif (EN = '1') then
+         if (OP_A(15) = '1') then 
+            sOP_Q <= "100";
+         elsif (OP_A = "0000000000000000")then
+            sOP_Q <= "010";
+         else
+            sOP_Q <= "001";
+      end if;
+   end if;
+end if;
+end process;
+OP_Q <= sOP_Q;
+end behavioral;
+
+
+--------- RAM ----------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+
+entity RAM is
+generic(ADD_WIDTH: integer:= 9;  -- address bit size 2**9=512 words
+        WIDTH: integer:= 16);  -- data size
+port(
+    CLK: in std_logic;  --clock
+    mem_wr_rd_add: in std_logic_vector(ADD_WIDTH-1 downto 0);  --write address
+    data_in: in std_logic_vector(WIDTH-1 downto 0);  --input data
+    data_out: out std_logic_vector(WIDTH-1 downto 0);  --output data
+    read_write_en: in std_logic;  --read(0)/write(1) enable
+    mem_en: in std_logic);        
+end RAM;
+
+architecture RAM_1kb of RAM is
+    type data_array is array (integer range <>) of std_logic_vector(WIDTH-1 downto 0);
+    signal data: data_array(0 to (2**ADD_WIDTH)) := (
+    "0010000000010011", "0010001000010011", "0001010000000001",
+    "0101011000000010", "1001100011111111", others => "0000000000000000"); --array of 512 word of length 16 bits
+begin
+
+MEMORY: process(CLK, read_write_en)
+begin
+
+    if mem_en = '0' then
+        data_out <= (others => 'Z');
+        
+    elsif mem_en = '1' and (CLK'event and CLK = '1') then --if clock is 1 on the rising edge, and read
+        if read_write_en = '1' then                       --is enabled(0), then read data from mem array
+            data(conv_integer(mem_wr_rd_add)) <= data_in;  --write mem array by decimal in mem_write_add
+            data_out <= (others => 'Z');
+        elsif read_write_en = '0' then
+            data_out <= data(conv_integer(mem_wr_rd_add));  --addressed by decimal in mem_read_add
+        end if;
+    end if;
+end process MEMORY;   
+end RAM_1kb;
+
+
+------------ MAR -------------------
+library IEEE; 
+use work.all; 
+use IEEE.STD_LOGIC_1164.all; 
+
+entity gaire_MAR_REG is 
+port (
+CLK: std_logic; 
+EN: in std_logic; 
+RSTn: in std_logic;
+BUS_IN: in std_logic_vector(15 downto 0); 
+MAR_OUT: out std_logic_vector(8 downto 0) 
+); 
+end gaire_MAR_REG; 
+
+architecture BEH of gaire_MAR_REG is
+ 
+signal MAR_DATA_OUT: std_logic_vector(8 downto 0);
+
+begin
+
+MAR_REG:process (CLK,EN,RSTn,BUS_IN)
+
+begin 
+
+	if (RSTn = '1') then -- act like a tri-state
+	
+	    MAR_DATA_OUT <= (others=>'Z');	
+	        
+	elsif (CLK'event and CLK = '1') then
+	
+	       if (EN='1') then
+	
+					MAR_DATA_OUT <= BUS_IN(8 downto 0); --grab the 9-bit address
+	       else
+			 
+	       MAR_DATA_OUT <=(others=>'Z'); -- act like a tri-state
+	       
+	       end if;
+	 end if;
+	 
+end process;
+MAR_OUT <= MAR_DATA_OUT;
+end BEH; 
+
+
+------------ MDR -------------------
+library IEEE; 
+use work.all; 
+use IEEE.STD_LOGIC_1164.all; 
+
+entity gaire_MDR_REG is 
+port (
+		CLK: in std_logic; 
+		EN: in std_logic; 
+		RSTn: in std_logic;
+		BUS_IN: in std_logic_vector(15 downto 0); --FROM BUS (WRITE)
+		MEM_IN: in std_logic_vector(15 downto 0); --FROM MEM (READ)
+      MDR_OUT: out std_logic_vector(15 downto 0)-- To Bus
+		 ); 
+end gaire_MDR_REG; 
+
+architecture BEH of gaire_MDR_REG is 
+signal MDR_DATA: std_logic_vector(15 downto 0):=(others =>'0');
+
+begin
+
+MDR_REG:process (CLK,EN,RSTN,BUS_IN,MEM_IN)
+
+begin 
+
+	if (RSTn = '1') then	--act like a tri-state
+	
+	    MDR_DATA <= (others=>'Z');
+	     
+	elsif (CLK'event and CLK = '1') then
+
+	       if (EN='1') then	-- accept data from Bus (WRITE 16-bits)
+			 
+					MDR_DATA <= BUS_IN;
+	       elsif (EN='0')then
+					MDR_DATA <= MEM_IN; -- accept data from MEM (READ 16-bits)
+	       else	       
+					MDR_DATA <= MDR_DATA; -- Latch	
+	       end if;
+	 end if;
+	 
+end process;
+MDR_OUT <= MDR_DATA;
+end BEH; 
+
+
+--------- FSM ----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity gaire_datapath is
+port(
+	CLK: in std_logic;
+	RSTn: in std_logic
+);
+
+architecture structural of gaire_datapath is
+
+------------------------------------------------------------
+-------------------- Component decleration -----------------
+------------------------------------------------------------
+
+-------------- register array ------------------------------
+component gaire_register_array is
+generic(w: integer:= 16;
+        p: integer := 3;
+        E: natural := 8
+);
+port(CLK: in std_logic;
+    reset: in std_logic;
+    LD_REG: in std_logic; -- enable to tell us which register in the array is active for input
+    DR: in std_logic_vector(p-1 downto 0);
+    OP_A: in std_logic_vector(w-1 downto 0);
+    SR1: in std_logic_vector(p-1 downto 0);
+    SR2: in std_logic_vector(p-1 downto 0);
+    OP_Q1: out std_logic_vector(w-1 downto 0);
+    OP_Q2: out std_logic_vector(w-1 downto 0)
+);
+end component;
+
+
+-------------- sign extender -------------------------------
+component gaire_5_to_16_bit_sign_extender is
+generic (p: integer:= 16;   
+         w: integer:= 5);
+port (CLK: in std_logic;   
+      reset: in std_logic;
+      OP_A: in std_logic_vector(w-1 downto 0);
+      OP_Q: out std_logic_vector(p-1 downto 0) 
+      );
+end component;
+
+component gaire_6_to_16_bit_sign_extender is
+generic (p: integer:= 16;   
+         w: integer:= 6);
+port (CLK: in std_logic;   
+      reset: in std_logic;
+      OP_A: in std_logic_vector(w-1 downto 0);
+      OP_Q: out std_logic_vector(p-1 downto 0) 
+      );
+end component;
+
+component gaire_8_to_16_bit_zero_extender is
+generic (p: integer:= 16;   
+         w: integer:= 8);
+port (CLK: in std_logic;   
+      reset: in std_logic;
+      OP_A: in std_logic_vector(w-1 downto 0);
+      OP_Q: out std_logic_vector(p-1 downto 0) 
+      );
+end component;
+
+component gaire_9_to_16_bit_sign_extender is
+generic (p: integer:= 16;   
+         w: integer:= 9);
+port (CLK: in std_logic;   
+      reset: in std_logic;
+      OP_A: in std_logic_vector(w-1 downto 0);
+      OP_Q: out std_logic_vector(p-1 downto 0) 
+      );
+end component;
+
+component gaire_11_to_16_bit_sign_extender is
+generic (p: integer:= 16;   
+         w: integer:= 11);
+port (CLK: in std_logic;   
+      reset: in std_logic;
+      OP_A: in std_logic_vector(w-1 downto 0);
+      OP_Q: out std_logic_vector(p-1 downto 0) 
+      );
+end component;
+
+------------------------- MUX -----------------------------
+component gaire_2_to_1_multiplexer is
+port(
+	a_0: in std_logic_vector(15 downto 0);
+	a_1: in std_logic_vector(15 downto 0);
+	y: out std_logic_vector(15 downto 0);
+	sel: in std_logic);
+end component;
+
+component gaire_3_to_1_multiplexer is
+port(
+	a_0: in std_logic_vector(15 downto 0);
+	a_1: in std_logic_vector(15 downto 0);
+	a_2: in std_logic_vector(15 downto 0);
+	y: out std_logic_vector(15 downto 0);
+	sel: in std_logic_vector(1 downto 0));
+end component;
+
+component gaire_4_to_1_multiplexer is
+port(
+	a_0: in std_logic_vector(15 downto 0);
+	a_1: in std_logic_vector(15 downto 0);
+	a_2: in std_logic_vector(15 downto 0);
+	a_3: in std_logic_vector(15 downto 0);
+	y: out std_logic_vector(15 downto 0);
+	sel: in std_logic_vector(1 downto 0));
+end component;
+
+---------------- Tri state gate ---------------------------
+component gaire_tri_state_gate is
+generic(w:integer:= 16);
+port( EN: in std_logic;
+	input: in std_logic_vector(w-1 downto 0);
+	output: out std_logic_vector(w-1 downto 0)
+);
+end component;
+
+------------------- ALU -----------------------------------
+component gaire_alu is
+generic(w: integer:= 16);
+port(
+	OP_A: in std_logic_vector(w-1 downto 0);
+	OP_B: in std_logic_vector(w-1 downto 0);
+	sel: in std_logic_vector(1 downto 0);
+	OP_Q: out std_logic_vector(w-1 downto 0)
+);
+end component;
+
+------------------- PC counter ----------------------------
+component gaire_program_counter is
+	generic(w: integer := 16);
+	port(CLK: in std_logic;
+	reset: in std_logic;
+	EN: in std_logic;
+	OP_A: in std_logic_vector(w-1 downto 0);
+	OP_Q: out std_logic_vector(w-1 downto 0);
+	OP_Z: out std_logic_vector(w-1 downto 0)
+);
+end component;
+
+
+--------------------- NZP ---------------------------------
+component NZP is 
+port(
+     CLK: in std_logic;
+     reset: in std_logic;
+     EN: in std_logic;
+     OP_A: in std_logic_vector(15 downto 0);
+     OP_Q: out std_logic_vector(2 downto 0)
+     );
+end component;
+
+----------------------- RAM -------------------------------
+entity RAM is
+generic(ADD_WIDTH: integer:= 9;  -- address bit size 2**9=512 words
+        WIDTH: integer:= 16);  -- data size
+port(
+    CLK: in std_logic;  --clock
+    mem_wr_rd_add: in std_logic_vector(ADD_WIDTH-1 downto 0);
+    data_in: in std_logic_vector(WIDTH-1 downto 0);  --input data
+    data_out: out std_logic_vector(WIDTH-1 downto 0);  --output data
+    read_write_en: in std_logic;  --read(0)/write(1) enable
+    mem_en: in std_logic);        
+end component;
+
+------------------------- MAR ------------------------------
+component gaire_MAR_REG is 
+port (
+	CLK: std_logic; 
+	EN: in std_logic; 
+	RSTn: in std_logic;
+	BUS_IN: in std_logic_vector(15 downto 0); 
+	MAR_OUT: out std_logic_vector(8 downto 0) 
+); 
+end component; 
+
+------------------------- MDR ------------------------------
+component gaire_MDR_REG is 
+port (
+	CLK: in std_logic; 
+	EN: in std_logic; 
+	RSTn: in std_logic;
+	BUS_IN: in std_logic_vector(15 downto 0); --FROM BUS (WRITE)
+	MEM_IN: in std_logic_vector(15 downto 0); --FROM MEM (READ)
+	MDR_OUT: out std_logic_vector(15 downto 0)-- To Bus
+		 ); 
+end component; 
+
+
+
+------------------------- FSM ------------------------------
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------
+----------------------- SIGNALS ----------------------------
+------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------
+----------------------- INSTANTIATE -----------------------
+-----------------------------------------------------------
+begin
+
+
+end structural;
